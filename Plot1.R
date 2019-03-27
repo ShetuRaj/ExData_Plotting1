@@ -16,7 +16,7 @@ energy_consumed[, Date := lapply(.SD, as.Date, "%d/%m/%Y"), .SDcols = c("Date")]
 # Filter Dates for 2007-02-01 and 2007-02-02
 energy_consumed <- energy_consumed[(Date >= "2007-02-01") & (Date <= "2007-02-02")]
 
-png("plot1.png", width=480, height=480)
+png("Plot1.png", width=480, height=480)
 
 ## This gives Plot 1
 hist(energy_consumed[, Global_active_power], main="Global Active Power", 
