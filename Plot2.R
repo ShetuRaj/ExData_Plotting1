@@ -16,7 +16,7 @@ energy_consumed[, dateTime := as.POSIXct(paste(Date, Time), format = "%d/%m/%Y %
 # Filter Dates for 2007-02-01 and 2007-02-02
 energy_consumed <- energy_consumed[(dateTime >= "2007-02-01") & (dateTime < "2007-02-03")]
 
-png("plot2.png", width=480, height=480)
+png("Plot2.png", width=480, height=480)
 
 ## This is Plot 2
 plot(x = energy_consumed[, dateTime]
