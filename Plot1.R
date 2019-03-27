@@ -1,6 +1,6 @@
 library("data.table")
 
-setwd("D:\Data Science")
+setwd("D:/Data Science")
 
 #Reads in data from file then subsets data for specified dates
 energy_consumed <- data.table::fread(input = "household_power_consumption.txt"
